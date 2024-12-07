@@ -13,3 +13,17 @@ func ConvertStringArrayToInt(arr []string) []int {
 	}
 	return ans
 }
+
+func ConcatenateInt(a int, b int) int {
+	aStr := strconv.Itoa(a)
+	bStr := strconv.Itoa(b)
+
+	concatenated := aStr + bStr
+
+	value, err := strconv.Atoi(concatenated)
+
+	if err != nil {
+		panic(err)
+	}
+	return value
+}
