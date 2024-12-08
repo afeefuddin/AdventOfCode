@@ -8,3 +8,12 @@ func Contains(arr []int, val int) bool {
 	}
 	return false
 }
+
+func Make2dArray(rows, cols int) [][]int {
+	ans := make([][]int, rows)
+
+	for i := range ans {
+		ans[i] = make([]int, cols)
+	}
+	return ans
+}
